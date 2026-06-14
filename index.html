@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Stopwatch | Prodigy InfoTech</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <span>PRO</span>WATCH
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#stopwatch">Stopwatch</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#footer">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <h1>Professional Stopwatch</h1>
+
+        <p>
+            Precision time tracking with lap recording,
+            analytics and modern UI experience.
+        </p>
+
+    </section>
+
+    <!-- STOPWATCH -->
+
+    <section class="main-section" id="stopwatch">
+
+        <div class="container">
+
+            <div class="header">
+
+                <div class="title">
+                    ⏱ Professional Stopwatch
+                </div>
+
+                <div class="live-time" id="liveClock">
+                    Loading...
+                </div>
+
+            </div>
+
+            <!-- DISPLAY -->
+
+            <div class="display">
+
+                <div class="time" id="display">
+                    00:00:00
+                    <span class="ms">.000</span>
+                </div>
+
+            </div>
+
+            <!-- STATS -->
+
+            <div class="stats">
+
+                <div class="card">
+                    <h3>Total Laps</h3>
+                    <p id="lapCount">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Fastest Lap</h3>
+                    <p id="fastLap">--</p>
+                </div>
+
+                <div class="card">
+                    <h3>Slowest Lap</h3>
+                    <p id="slowLap">--</p>
+                </div>
+
+            </div>
+
+            <!-- BUTTONS -->
+
+            <div class="buttons">
+
+                <button class="start" onclick="startStopwatch()">
+                    Start
+                </button>
+
+                <button class="pause" onclick="pauseStopwatch()">
+                    Pause
+                </button>
+
+                <button class="lap" onclick="recordLap()">
+                    Lap
+                </button>
+
+                <button class="reset" onclick="resetStopwatch()">
+                    Reset
+                </button>
+
+            </div>
+
+            <!-- LAP LIST -->
+
+            <div class="lap-box" id="laps"></div>
+
+            <div class="footer-note">
+
+                Keyboard Shortcuts :
+
+                <strong>S</strong> = Start |
+                <strong>P</strong> = Pause |
+                <strong>L</strong> = Lap |
+                <strong>R</strong> = Reset
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FEATURES -->
+
+    <section class="features" id="features">
+
+        <h2>Why Choose Our Stopwatch?</h2>
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <h3>⚡ Millisecond Accuracy</h3>
+                <p>Track time precisely with millisecond precision.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🏁 Lap Tracking</h3>
+                <p>Record unlimited laps and analyze performance.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📊 Smart Analytics</h3>
+                <p>Automatically identify fastest and slowest laps.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>⌨ Keyboard Support</h3>
+                <p>Control stopwatch instantly with keyboard shortcuts.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📱 Responsive Design</h3>
+                <p>Works perfectly on desktop, tablet and mobile devices.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🎨 Modern Interface</h3>
+                <p>Professional glassmorphism design with smooth animations.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+
+        <div class="footer-content">
+
+            <h3>Professional Stopwatch</h3>
+
+            <p class="copyright">
+                © 2026 Professional Stopwatch | Prodigy InfoTech Internship Project
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
